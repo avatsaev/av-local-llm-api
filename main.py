@@ -76,6 +76,6 @@ async def completion(input_data: InferenceInput):
             user_input=input_data.user_input, local_llm=app.local_llm, system_prompt=SYSTEM_PROMPT)
     elif (LLM_INFERENCE_MODE == "remote"):
         res = remote_inference(
-            user_input=input_data.user_input, remote_llm_client=app.remote_llm_client, system_prompt=SYSTEM_PROMPT)
+            user_input=input_data.user_input, remote_llm_client=app.remote_llm_client, system_prompt=SYSTEM_PROMPT, model_name=LLM_API_MODEL)
 
     return InferenceOutput(inference_output=res)
