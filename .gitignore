@@ -1,3 +1,5 @@
 .env
 .env.local
 ./experiments.ipynb
+__pycache__/
+
