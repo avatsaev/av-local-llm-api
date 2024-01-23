@@ -50,7 +50,7 @@ Make a `POST` request with a JSON body containing your input
 CURL Example:
 
 ```bash
-curl --location 'http://127.0.0.1:8000/v1/chat/completions' \
+curl --location 'http://127.0.0.1:8000/inference' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "user_input": "YOU INPUT HERE"
@@ -92,7 +92,7 @@ Respond only with refactored code output and nothing else.
 ```
 
 ```bash
-curl --location 'http://127.0.0.1:8000/v1/chat/completions' \
+curl --location 'http://127.0.0.1:8000/inference' \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "user_input": "UpdateUser(user: newUserParams)\ndeleteUser(user: user)\ncreateUser({user: {...userParams}})"

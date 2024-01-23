@@ -67,7 +67,7 @@ class InferenceOutput(BaseModel):
     inference_output: str
 
 
-@app.post("/v1/chat/completions")
+@app.post("/inference")
 async def completion(input_data: InferenceInput):
     # Your redaction logic goes here
     res = ''
