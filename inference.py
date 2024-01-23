@@ -27,7 +27,7 @@ def remote_inference(user_input='', system_prompt='', remote_llm_client='', mode
                 "content": user_input
             }
         ],
-        temperature=0.7,
+        temperature=0.1,
     )
     print(res)
     return res.choices[0].message.content
