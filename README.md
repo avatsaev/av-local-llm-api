@@ -43,7 +43,7 @@ Modify the `MODEL_PATH` var to point it to your locally downloaded `gguf` file
 uvicorn main:app
 ```
 
-Inference endpoint is available at: `http://127.0.0.1:8000/v1/chat/completions`
+Inference endpoint is available at: `http://127.0.0.1:8000/inference`
 
 Make a `POST` request with a JSON body containing your input
 
