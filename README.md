@@ -1,4 +1,4 @@
-# AV Local LLM API
+# Local LLM API
 
 Allows to easily run local REST API with a custom LLM, running locally or remotely, with user defined system instructions.
 
