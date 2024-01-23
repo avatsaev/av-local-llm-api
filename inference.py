@@ -19,7 +19,7 @@ def local_inference(user_input='', local_llm=None, system_prompt=''):
 def remote_inference(user_input='', system_prompt='', remote_llm_client='', model_name=''):
     print("Running remote inference, user_input: ", user_input)
     res = remote_llm_client.chat.completions.create(
-        model=model_name,  # this field is currently unused
+        model=model_name,
         messages=[
             {"role": "system", "content": system_prompt},
             {
